@@ -1,0 +1,44 @@
+<templateManifest typeOfTemplate="Solution">
+  <name>Sitecore Helix Solution with Unicorn</name>
+  <description>Sitecore Helix Solution starter template with Unicorn, including Built-in Library and MVC Project Templates 
+    </description>
+  <version>1.0.0</version>
+  <author>Fauzan Azhiman</author>
+  <sourceFolder>/src</sourceFolder>
+  <saveOnCreate>true</saveOnCreate>
+  <templateEngine type="LaubPlusCo.Foundation.HelixTemplating.TemplateEngine.DefaultHelixTemplateEngine, LaubPlusCo.Foundation.HelixTemplating" />
+  <replacementTokens>
+    <token key="$sitecoreVersion$" displayName="Sitecore kernel version (for PackageReference)" default="9.3.0" input="Selection" required="true">
+      <option name="9.3.0" />
+      <option name="10.1.0" />
+      <option name="10.2.0" />
+      <option name="10.3.0" />
+    </token>
+    <token key="$solutionNamespace$" displayName="Solution namespace" default="$safeprojectname$" input="Text" required="true" validationType="LaubPlusCo.Foundation.HelixTemplating.Tokens.ValidateModuleNameToken, LaubPlusCo.Foundation.HelixTemplating" />
+    <token key="$autoPublishOnBuild$" displayName="Auto-publish solution on local build" default="true" input="Checkbox" required="true" />
+    <token key="$webHostName$" displayName="Website hostname (Local development URL)" required="true" default="hostname.dev.local" input="Text" />
+    <token key="$publishPath$" displayName="Publish to file path" required="true" default="C:\inetpub\wwwroot\$webHostName$" input="Text" />
+  </replacementTokens>
+  <skipAttach>
+    <folder path="/src/Foundation/Serialization/serialization/" />
+    <folder path="/src/Project/$solutionNamespace$/serialization/" />
+    <folder path="/src/Project/$solutionNamespace$Content/serialization/" />
+    <folder path="/src/Project/$solutionNamespace$SampleContent/" />
+  </skipAttach>
+  <projectsToAttach>
+    <projectFile path="/src/Project/$solutionNamespace$/website/$solutionNamespace$.Project.Website.csproj" />
+    <projectFile path="/src/Project/$solutionNamespace$Content/website/$solutionNamespace$.Project.$solutionNamespace$Content.csproj" />
+    <projectFile path="/src/Foundation/Serialization/website/$solutionNamespace$.Foundation.Serialization.csproj" />
+  </projectsToAttach>
+  <virtualSolutionFolders>
+    <virtualSolutionFolder name="_Solution">
+      <file path="/$emptyString$.editorconfig" />
+      <file path="/$emptyString$.gitattributes" />
+      <file path="/$emptyString$.gitignore" />
+      <file path="/README.md" />
+    </virtualSolutionFolder>
+  </virtualSolutionFolders>
+  <ignoreFiles>
+    <file path="/template.manifest.xml" />
+  </ignoreFiles>
+</templateManifest> 
