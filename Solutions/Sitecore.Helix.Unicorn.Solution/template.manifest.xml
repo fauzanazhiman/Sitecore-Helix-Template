@@ -15,7 +15,6 @@
       <option name="10.3.0" />
     </token>
     <token key="$solutionNamespace$" displayName="Solution namespace" default="$safeprojectname$" input="Text" required="true" validationType="LaubPlusCo.Foundation.HelixTemplating.Tokens.ValidateModuleNameToken, LaubPlusCo.Foundation.HelixTemplating" />
-    <token key="$autoPublishOnBuild$" displayName="Auto-publish solution on local build" default="true" input="Checkbox" required="true" />
     <token key="$webHostName$" displayName="Website hostname (Local development URL)" required="true" default="hostname.dev.local" input="Text" />
     <token key="$publishPath$" displayName="Publish to file path" required="true" default="C:\inetpub\wwwroot\$webHostName$" input="Text" />
   </replacementTokens>
@@ -36,6 +35,7 @@
       <file path="/$emptyString$.gitattributes" />
       <file path="/$emptyString$.gitignore" />
       <file path="/README.md" />
+      <file path="/stylecop.json" />
     </virtualSolutionFolder>
   </virtualSolutionFolders>
   <ignoreFiles>

@@ -1,0 +1,24 @@
+{  
+    "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+    "settings": {
+      "documentationRules": {
+        "companyName": "SoftServe",
+        "fileNamingConvention": "stylecop"
+      },
+      "indentation": {},
+      "layoutRules": {
+        "allowConsecutiveUsings": false
+      },
+      "maintainabilityRules": {
+        "topLevelTypes": [ "class", "interface", "struct", "enum" ]
+      },
+      "namingRules": {},
+      "orderingRules": {
+        "blankLinesBetweenUsingGroups": "require",
+        "elementOrder": [ "kind", "accessibility", "constant", "static", "readonly" ]
+      },
+      "readabilityRules": {},
+      "spacingRules": {}
+    }
+  }
+  

@@ -1,8 +1,7 @@
 <templateManifest typeOfTemplate="Module">
-  <name>Sitecore MVC Module with Unicorn + Unit Testing (Classic) </name>
+  <name>Sitecore MVC Module with Unicorn + Unit Testing </name>
   <description>
   </description>
-  <link text="Read more on github..">https://github.com/LaubPlusCo/helix-msbuild-example</link>
   <version>1.0.0</version>
   <author>Fauzan Azhiman</author>
   <sourceFolder>/src</sourceFolder>

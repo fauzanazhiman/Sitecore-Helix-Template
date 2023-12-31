@@ -1,21 +1,27 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-
 namespace $modulenamespace$.Controllers
 {
-    public class $safeprojectname$Controller : Controller
-    {
-        public $safeprojectname$Controller()
-        {
-            //
-        }
+  using System.Web.Mvc;
 
-        public ActionResult SampleAction()
-        {
-            return View("~/Views/$safeprojectname$/$safeprojectname$SampleView.cshtml");
-        }
+  /// <summary>
+  /// This is description of $safeprojectname$Controller
+  /// </summary>
+  public class $safeprojectname$Controller : Controller
+  {
+    /// <summary>
+    /// Initializes a new instance of the <see cref="$safeprojectname$Controller"/> class.
+    /// </summary>
+    public $safeprojectname$Controller()
+    {
+      // Put controller logic here
     }
-}
+
+    /// <summary>
+    /// Generate rendering view
+    /// </summary>
+    /// <returns>Rendering view</returns>
+    public ActionResult SampleView()
+    {
+      return View("~/Views/$safeprojectname$/$safeprojectname$SampleView.cshtml");
+    }
+  }
+}   

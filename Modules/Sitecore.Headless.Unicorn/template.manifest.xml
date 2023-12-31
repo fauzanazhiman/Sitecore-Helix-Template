@@ -1,5 +1,5 @@
 <templateManifest typeOfTemplate="Module">
-  <name>Sitecore Empty Library Module with Unicorn + Unit Testing</name>
+  <name>Sitecore Headless (ContentResolver) Module with Unicorn + Unit Testing </name>
   <description>
   </description>
   <version>1.0.0</version>
@@ -16,14 +16,15 @@
     </token>
     <token key="$moduleName$" displayName="Module name" default="$safeprojectname$" input="Text" required="true" validationType="LaubPlusCo.Foundation.HelixTemplating.Tokens.ValidateModuleNameToken, LaubPlusCo.Foundation.HelixTemplating" />
     <token key="$moduleNamespace$" displayName="Module namespace" required="true" default="$solutionNamespace$.$layerName$.$safeprojectname$" input="Text" suggestType="LaubPlusCo.Foundation.HelixTemplating.Tokens.SuggestNamespaceToken, LaubPlusCo.Foundation.HelixTemplating" validationType="LaubPlusCo.Foundation.HelixTemplating.Tokens.ValidateNamespaceToken, LaubPlusCo.Foundation.HelixTemplating" />
+    <token key="$publishPath$" displayName="Publish path" required="true" default="C:\inetpub\wwwroot\sc102sc.dev.local" input="Text" />
     <!-- <token key="$projectrootfolderName$" displayName="Project root folder name (f. ex. code, website, commerce, xconnect)" required="true" default="website" input="Text" /> -->
-    <token key="$sitecoreVersion$" displayName="Sitecore kernel version (for PackageReference)" default="9.3.0" input="Selection" required="true">
+	  <token key="$sitecoreVersion$" displayName="Sitecore kernel version (for PackageReference)" default="9.3.0" input="Selection" required="true">
       <option name="9.3.0" />
       <option name="10.1.0" />
       <option name="10.2.0" />
       <option name="10.3.0" />
     </token>
-	  <token key="$unicornDependencies$" displayName="Unicorn dependencies" default="Foundation.Serialization" input="Selection" required="true">
+    <token key="$unicornDependencies$" displayName="Unicorn dependencies" default="Foundation.Serialization" input="Selection" required="true">
       <option name="Foundation.Serialization" />
       <option name="Foundation.*" />
       <option name="Feature.*" />

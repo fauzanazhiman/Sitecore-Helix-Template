@@ -11,7 +11,6 @@
 	<ItemGroup>
 	  <None Remove="App_Config\Include\Feature\$layerName$.$safeprojectname$.config" />
 	  <None Remove="App_Config\Include\Feature\$layerName$.$safeprojectname$.Serialization.config" />
-	  <None Remove="Views\$solutionNamespace$\$safeprojectname$\$safeprojectname$SampleView.cshtml" />
 	</ItemGroup>
 	<ItemGroup>
 		<Content Include="App_Config\Include\Feature\$layerName$.$safeprojectname$.config">
@@ -20,7 +19,6 @@
 		<Content Include="App_Config\Include\Feature\$layerName$.$safeprojectname$.Serialization.config">
 			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
 		</Content>
-		<Content Include="Views\$solutionNamespace$\$safeprojectname$\$safeprojectname$SampleView.cshtml" />
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="AutoMapper" Version="9.0.0" />
@@ -28,7 +26,7 @@
 		<PackageReference Include="Sitecore.Kernel" Version="$sitecoreVersion$">
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
-		<PackageReference Include="Sitecore.Mvc" Version="$sitecoreVersion$">
+		<PackageReference Include="Sitecore.LayoutService" Version="$sitecoreVersion$">
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
 		<PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
